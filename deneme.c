@@ -2,5 +2,6 @@
 
 int main()
 {
-    printf("merhaba");
+    printf("merhaba\n");
+    printf("deneme yapiyorum\n");
 }
