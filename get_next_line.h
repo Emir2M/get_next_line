@@ -3,7 +3,7 @@
 
 #include <stdio.h> // printf kullanmak için ekledim.
 #include <fcntl.h> // open() kullanmak için ekledim.
-#include <unistd.h> //  write kullanmak için ekledim.
+#include <unistd.h> //  write ve read() kullanmak için ekledim.
 
 char *get_next_line(int fd);
 int ft_strlen(char *string);
