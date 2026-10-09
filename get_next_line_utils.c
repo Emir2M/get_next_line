@@ -17,7 +17,7 @@ size_t ft_strlen(char *string)
     size_t i;
 
     if(!string)
-        return(NULL);
+        return(0);
 
     i=0;
     while(string[i]!='\0')

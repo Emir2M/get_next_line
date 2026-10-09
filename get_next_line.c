@@ -111,23 +111,3 @@ char	*get_next_line(int fd)
 	stash = clean_stash(stash);
 	return (line);
 }
-
-int	main(void)
-{
-	int		fd;
-	char	*line;
-
-	fd = open("test.txt", O_RDONLY);
-	if (fd == -1)
-	{
-		printf("Dosya acilmadi!\n");
-		return (1);
-	}
-	while ((line = get_next_line(fd)) != NULL)
-	{
-		printf("%s", line);
-		free(line);
-	}
-	close(fd);
-	return (0);
-}
