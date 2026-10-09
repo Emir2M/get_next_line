@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_utils.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: emirhyil <emirhyil@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/23 16:12:59 by emirhyil          #+#    #+#             */
+/*   Updated: 2026/09/23 19:59:19 by emirhyil         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "get_next_line.h"
 
@@ -62,38 +72,13 @@ char    *ft_strjoin(char *s1, char *s2)
         return (NULL);
     i=0;
     j=0;
-    while(s1[i]!='\0')
+    while(s1 && s1[i])
     {
         s3[i]=s1[i];
         i++;
     }
-    while(s2[j]!='\0')
-    {
-        s3[i]=s2[j];
-        j++;
-        i++;
-    }
+    while(s2 && s2[j])
+        s3[i++]=s2[j++];
     s3[i]='\0';
     return (s3);
-}
-
-static char *ft_left_str()
-{
-
-}
-
-int main()
-{
-    // int fd;
-    // fd = open("deneme.txt", O_CREAT | O_RDWR, 0644);
-
-    // if(fd== -1)
-    //     return (-1);
-    // char *string = "emirhan\nyildirim";
-    // ft_putstr_fd(string, fd);
-
-    char *string;
-    char c = 'a';
-
-
 }
