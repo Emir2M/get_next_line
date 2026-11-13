@@ -6,7 +6,7 @@
 /*   By: emirhyil <emirhyil@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 16:12:59 by emirhyil          #+#    #+#             */
-/*   Updated: 2026/11/13 12:57:02 by emirhyil         ###   ########.fr       */
+/*   Updated: 2026/11/13 19:11:18 by emirhyil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,6 @@ size_t	ft_strlen(char *string)
 		i++;
 	}
 	return (i);
-}
-
-void	ft_putstr_fd(char *string, int fd)
-{
-	int	i;
-
-	i = 0;
-	while (string[i] != '\0')
-	{
-		write(fd, &string[i], 1);
-		i++;
-	}
 }
 
 char	*ft_strchr(char *string, int c)
