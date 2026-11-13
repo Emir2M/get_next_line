@@ -6,7 +6,7 @@
 /*   By: emirhyil <emirhyil@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:55:12 by emirhyil          #+#    #+#             */
-/*   Updated: 2026/11/13 14:46:18 by emirhyil         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:14:55 by emirhyil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE = 42
+#endif
 
 size_t	ft_strlen(char *string);
 void	ft_putstr_fd(char *string, int fd);

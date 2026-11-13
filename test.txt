@@ -1,0 +1,18 @@
+emirhan\nbeyza\nmustafa\nali\nsevde
+ahmet
+mustafa
+selam benim adim emir
+a
+
+buffer size'ımız 5 olsun öncelikle read'imiz 5 byte okur
+ve ilk 5 karakteri buffer[]'a atar daha sonra buffer'ı
+stashin sonuna atarız ve içinde \n ararız ve emirh oldugu için bulamayız 
+daha sonra 5 karakter daha alırız bufferdan an\nbe ve bu sonuc cıkar
+bunun içinde \n 'i bulduk  emirhan yazdırdık terminal
+daha sonra kalan be içinde aradık bulmadık daha sonra
+beyza\nm içinde aradık ve beyza yazdı daha 
+
+stash emirh
+
+
+emirhan\n
